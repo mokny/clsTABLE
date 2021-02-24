@@ -2,6 +2,9 @@
 Easily print tables on the screen from an associative array
 
 ```php
+include("clsTABLE.php");
+
+
 //Some Array. In reality you'll get this from a MySQL Result
 $person = array();
 $person['name'] = "John Doe";
