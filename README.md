@@ -24,7 +24,7 @@ $t->Output();
 
 //Generate table and display selected items only
 $t = new TABLE();
-$t->SetHeaders(array("name" => "Full Name", "age" => "Curren Age"));
+$t->SetHeaders(array("name" => "Full Name", "age" => "Current Age"));
 $t->AddRows($tablearr);
 $t->Output();
 
