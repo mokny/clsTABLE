@@ -21,6 +21,17 @@ class TABLE {
         $this->Data = array_merge($this->Data, $rows);
     }
 
+    public function AddColumn($key, $html, $data) {
+        foreach($this->Data as &$row) {
+            $colhtml = $html;
+            foreach ($data as $replace => $value) {
+                $colhtml = str_replace($replace, $row[$value], $colhtml);
+            }
+            $row[$key] = $colhtml;
+        }
+
+    }
+
     public function SetHeaders($arr) {
         $this->OverrideHeaders = $arr;
     }
