@@ -35,7 +35,7 @@ $$t->Output();
 
 //Adding a column to all previous rows:
 $t = new TABLE();
-$t->AddRows($data);
+$t->AddRows($tablearr);
 //Here a column with the key 'details' will be added to each previous row. The 'variables' will be replaced by the content of the specific row
 $t->AddColumn('details','<a href="%replacebyid%">%replacebyname%</a>', array('%replacebyid%'=>'id', '%replacebyname%' => 'name'));
 $t->Output();
